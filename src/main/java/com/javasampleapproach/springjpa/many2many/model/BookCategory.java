@@ -10,9 +10,12 @@ import java.util.Set;
 @Table(name = "book_category")
 public class BookCategory {
 
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String name;
+
+	@OneToMany(mappedBy = "bookCategory", cascade = CascadeType.ALL)
 	private Set<Book> books;
 
 	public BookCategory(){
@@ -23,8 +26,7 @@ public class BookCategory {
 		this.name = name;
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+
 	public int getId() {
 		return id;
 	}
@@ -41,7 +43,7 @@ public class BookCategory {
 		this.name = name;
 	}
 
-	@OneToMany(mappedBy = "bookCategory", cascade = CascadeType.ALL)
+
 	public Set<Book> getBooks() {
 		return books;
 	}

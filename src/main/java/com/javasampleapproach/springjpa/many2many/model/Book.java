@@ -8,8 +8,14 @@ import javax.persistence.*;
 @Entity
 public class Book{
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
+
 	private String name;
+
+	@ManyToOne
+	@JoinColumn(name = "book_category_id")
 	private BookCategory bookCategory;
 
 	public Book() {
@@ -25,8 +31,7 @@ public class Book{
 		this.bookCategory = bookCategory;
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+
 	public int getId() {
 		return id;
 	}
@@ -43,8 +48,7 @@ public class Book{
 		this.name = name;
 	}
 
-	@ManyToOne
-	@JoinColumn(name = "book_category_id")
+
 	public BookCategory getBookCategory() {
 		return bookCategory;
 	}

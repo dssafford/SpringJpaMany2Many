@@ -1,7 +1,6 @@
 package com.javasampleapproach.springjpa.many2many;
 
-import com.javasampleapproach.springjpa.many2many.model.Book;
-import com.javasampleapproach.springjpa.many2many.model.BookCategory;
+import com.javasampleapproach.springjpa.many2many.model.*;
 import com.javasampleapproach.springjpa.many2many.repository.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.transaction.Transactional;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 
@@ -217,35 +217,35 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 
 
 //		==========================================================
-//		Location mailbox = new Location("mailbox");
-//		Location driveway = new Location("driveway");
-//
-//		Quiz quiz2 = new Quiz("third quiz2 comment");
-//		Quiz quiz3 = new Quiz("forth quiz3 comment");
-//
-//
-//		Set<Quiz> quizzes1 = new HashSet<Quiz>();
-//		quizzes1.add(quiz2);
-//		quizzes1.add(quiz3);
-//
-//		mailbox.setQuizzes(quizzes1);
-//		driveway.setQuizzes(quizzes1);
-//
-//		Set<Location> locations = new HashSet<Location>();
-//		locations.add(mailbox);
-//		locations.add(driveway);
-//
-////		quiz2.setLocations(locations);
-////		quiz3.setLocations(locations);
-//
-//
-//		locationOldRepository.save(mailbox);
-//		locationOldRepository.save(driveway);
-//
-////		Set <Quiz>
-//
-//		List<Location> locationList = locationOldRepository.findAll();
-//		List<Quiz> quizList = quizRepository.findAll();
+		Location mailbox = new Location("mailbox");
+		Location driveway = new Location("driveway");
+
+		Quiz quiz2 = new Quiz("third quiz2 comment");
+		Quiz quiz3 = new Quiz("forth quiz3 comment");
+
+
+		Set<Quiz> quizzes1 = new HashSet<Quiz>();
+		quizzes1.add(quiz2);
+		quizzes1.add(quiz3);
+
+		mailbox.setQuizzes(quizzes1);
+		driveway.setQuizzes(quizzes1);
+
+		Set<Location> locations = new HashSet<Location>();
+		locations.add(mailbox);
+		locations.add(driveway);
+
+		quiz2.setLocations(locations);
+		quiz3.setLocations(locations);
+
+
+		locationRepository.save(mailbox);
+		locationRepository.save(driveway);
+
+//		Set <Quiz>
+
+		List<Location> locationList = locationRepository.findAll();
+		List<Quiz> quizList = quizRepository.findAll();
 
 
 
@@ -265,55 +265,55 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 //		================================================================
 
 
-//		Student jack = new Student("Jack");
-//		Student peter = new Student("Peter");
-//		Student doug = new Student("Doug");
-//
-//		Subject math = new Subject("Mathematics");
-//		Subject computer = new Subject("Computer");
-//		Subject english = new Subject("English");
-//
-//		/*subjectRepository.save(math);
-//		subjectRepository.save(computer);*/
-//
-//		Set<Subject> subjects = new HashSet<Subject>();
-//		subjects.add(math);
-//		subjects.add(computer);
-//
-//		Set<Subject> subjectsDoug = new HashSet<Subject>();
-//		subjectsDoug.add(math);
-//		subjectsDoug.add(computer);
-//		subjectsDoug.add(english);
-//
-//		jack.setSubjects(subjects);
-//		peter.setSubjects(subjects);http://127.0.0.1/
-//		doug.setSubjects(subjectsDoug);
-//
-//		studentRepository.save(jack);
-//		studentRepository.save(peter);
-//		studentRepository.save(doug);
-//
-//		Set<Student> students = new HashSet<Student>();
-//		students.add(jack);
-//		students.add(peter);
-//		students.add(doug);
-//
-//		math.setStudents(students);
-//		computer.setStudents(students);
-//		english.setStudents(students);
-//
-//		subjectRepository.save(math);
-//		subjectRepository.save(computer);
-//
-//		List<Student> studentLst = studentRepository.findAll();
-//		List<Subject> subLst = subjectRepository.findAll();
-//
-//		List<Student> dougList = studentRepository.findByName("Doug");
-//
-//		System.out.println(studentLst.size());
-//		System.out.println(subLst.size());
-//
-//
+		Student jack = new Student("Jack");
+		Student peter = new Student("Peter");
+		Student doug = new Student("Doug");
+
+		Subject math = new Subject("Mathematics");
+		Subject computer = new Subject("Computer");
+		Subject english = new Subject("English");
+
+		/*subjectRepository.save(math);
+		subjectRepository.save(computer);*/
+
+		Set<Subject> subjects = new HashSet<Subject>();
+		subjects.add(math);
+		subjects.add(computer);
+
+		Set<Subject> subjectsDoug = new HashSet<Subject>();
+		subjectsDoug.add(math);
+		subjectsDoug.add(computer);
+		subjectsDoug.add(english);
+
+		jack.setSubjects(subjects);
+		peter.setSubjects(subjects);http://127.0.0.1/
+		doug.setSubjects(subjectsDoug);
+
+		studentRepository.save(jack);
+		studentRepository.save(peter);
+		studentRepository.save(doug);
+
+		Set<Student> students = new HashSet<Student>();
+		students.add(jack);
+		students.add(peter);
+		students.add(doug);
+
+		math.setStudents(students);
+		computer.setStudents(students);
+		english.setStudents(students);
+
+		subjectRepository.save(math);
+		subjectRepository.save(computer);
+
+		List<Student> studentLst = studentRepository.findAll();
+		List<Subject> subLst = subjectRepository.findAll();
+
+		List<Student> dougList = studentRepository.findByName("Doug");
+
+		System.out.println(studentLst.size());
+		System.out.println(subLst.size());
+
+
 //		System.out.println("===================Students info:==================");
 //		studentLst.forEach(student->System.out.println(student.toString()));
 //

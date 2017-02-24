@@ -1,15 +1,7 @@
 package com.javasampleapproach.springjpa.many2many.model;
 
+import javax.persistence.*;
 import java.util.Set;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 @Entity
 public class Subject {
@@ -50,22 +42,27 @@ public class Subject {
 	public void setStudents(Set<Student> students) {
 		this.students = students;
 	}
+
+
+
+
+
 	
-	@Override
-	public String toString(){
-		String info = "";
-		JSONObject jsonInfo = new JSONObject();
-		jsonInfo.put("name",this.name);
-		JSONArray studentArray = new JSONArray();
-		if(this.students != null && students.size() > 0){
-			this.students.forEach(student->{
-				JSONObject subJson = new JSONObject();
-				subJson.put("name", student.getName());
-				studentArray.put(subJson);
-			});
-		}
-		jsonInfo.put("students", studentArray);
-		info = jsonInfo.toString();
-		return info;
-	}
+//	@Override
+//	public String toString(){
+//		String info = "";
+//		JSONObject jsonInfo = new JSONObject();
+//		jsonInfo.put("name",this.name);
+//		JSONArray studentArray = new JSONArray();
+//		if(this.students != null && students.size() > 0){
+//			this.students.forEach(student->{
+//				JSONObject subJson = new JSONObject();
+//				subJson.put("name", student.getName());
+//				studentArray.put(subJson);
+//			});
+//		}
+//		jsonInfo.put("students", studentArray);
+//		info = jsonInfo.toString();
+//		return info;
+//	}
 }

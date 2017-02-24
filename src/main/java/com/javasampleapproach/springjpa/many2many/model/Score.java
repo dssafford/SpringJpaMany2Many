@@ -3,6 +3,7 @@ package com.javasampleapproach.springjpa.many2many.model;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by Doug on 1/8/17.
@@ -12,7 +13,8 @@ import java.util.Date;
 @Table(name = "score")
 public class Score {
 
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
 	private Date timestamp;
@@ -21,10 +23,10 @@ public class Score {
 	private BigDecimal finalScore;
 	private String comments;
 
-//	private Set<Quiz> quizzes;
+	@OneToMany(mappedBy = "score", cascade = CascadeType.ALL)
+	private Set<Quiz> quizzes;
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+
 	public Integer getId() {
 		return id;
 	}
@@ -73,13 +75,13 @@ public class Score {
 		this.comments = comments;
 	}
 
-//	@OneToMany(mappedBy = "score", cascade = CascadeType.ALL)
-//	public Set<Quiz> getQuizzes() {
-//		return quizzes;
-//	}
-//
-//	public void setQuizzes(Set<Quiz> quizzes) {
-//		this.quizzes = quizzes;
-//	}
+
+	public Set<Quiz> getQuizzes() {
+		return quizzes;
+	}
+
+	public void setQuizzes(Set<Quiz> quizzes) {
+		this.quizzes = quizzes;
+	}
 
 }

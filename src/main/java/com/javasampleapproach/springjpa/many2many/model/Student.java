@@ -1,8 +1,5 @@
 package com.javasampleapproach.springjpa.many2many.model;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import javax.persistence.*;
 import java.util.Set;
 
@@ -49,20 +46,20 @@ public class Student {
 		this.subjects = subjects;
 	}
 	
-	@Override
-	public String toString(){
-		String info = "";
-		JSONObject jsonInfo = new JSONObject();
-		jsonInfo.put("name",this.name);
-
-		JSONArray subArray = new JSONArray();
-		this.subjects.forEach(sub->{
-			JSONObject subJson = new JSONObject();
-			subJson.put("name", sub.getName());
-			subArray.put(subJson);
-		});
-		jsonInfo.put("subjects", subArray);
-		info = jsonInfo.toString();
-		return info;
-	}
+//	@Override
+//	public String toString(){
+//		String info = "";
+//		JSONObject jsonInfo = new JSONObject();
+//		jsonInfo.put("name",this.name);
+//
+//		JSONArray subArray = new JSONArray();
+//		this.subjects.forEach(sub->{
+//			JSONObject subJson = new JSONObject();
+//			subJson.put("name", sub.getName());
+//			subArray.put(subJson);
+//		});
+//		jsonInfo.put("subjects", subArray);
+//		info = jsonInfo.toString();
+//		return info;
+//	}
 }

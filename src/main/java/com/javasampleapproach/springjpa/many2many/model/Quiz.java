@@ -18,8 +18,12 @@ public class Quiz {
 	private String comments;
 	private BigDecimal finalScore;
 
-//	private Score score;
+	@ManyToOne
+	@JoinColumn(name = "score_id")
+	private Score score;
 
+	@ManyToMany(mappedBy = "quizzes")
+	private Set<Location> locations;
 
 	public int getId() {
 		return id;
@@ -44,19 +48,13 @@ public class Quiz {
 		this.finalScore = finalScore;
 	}
 
-	@ManyToMany(mappedBy = "quizzes")
-	private Set<Location> locations;
+	public Score getScore() {
+		return score;
+	}
 
-
-//	@ManyToOne
-//	@JoinColumn(name = "score_id")
-//	public Score getScore() {
-//		return score;
-//	}
-//
-//	public void setScore(Score score) {
-//		this.score = score;
-//	}
+	public void setScore(Score score) {
+		this.score = score;
+	}
 
 	public Set<Location> getLocations() {
 		return locations;
