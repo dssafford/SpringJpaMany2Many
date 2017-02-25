@@ -1,8 +1,6 @@
 package com.javasampleapproach.springjpa.many2many;
 
-import com.javasampleapproach.springjpa.many2many.model.Location;
-import com.javasampleapproach.springjpa.many2many.model.Quiz;
-import com.javasampleapproach.springjpa.many2many.model.Score;
+import com.javasampleapproach.springjpa.many2many.model.*;
 import com.javasampleapproach.springjpa.many2many.repository.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +35,12 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 	@Autowired
 	QuizRepository quizRepository;
 
+	@Autowired
+	PlaceRepository placeRepository;
+
+	@Autowired
+	PlaceTestRepository placeTestRepository;
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJpaMany2ManyApplication.class, args);
 	}
@@ -49,6 +53,36 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 	@Autowired
 	private ScoreRepository scoreRepository;
 
+	private void loadPlaceTests(){
+				// save a couple of categories
+//		Place categoryA = new Place(1, "placename");
+//		Set placeTest = new HashSet<PlaceTest>(){{
+//			add(new PlaceTest("mailbox", categoryA));
+//			add(new PlaceTest("driveway", categoryA));
+//			add(new PlaceTest("garage", categoryA));
+//		}};
+//		categoryA.setPlaceTests(placeTest);
+
+//		BookCategory categoryB = new BookCategory("Category B");
+//		Set bookBs = new HashSet<Book>(){{
+//			add(new Book("Book B1", categoryB));
+//			add(new Book("Book B2", categoryB));
+//			add(new Book("Book B3", categoryB));
+//		}};
+//		categoryB.setBooks(bookBs);
+
+//		placeRepository.save(new HashSet<Place>() {{
+//			add(categoryA);
+////			add(categoryB);
+//		}});
+//
+//		// fetch all categories
+//		for (Place place : placeRepository.findAll()) {
+//			logger.info(place.toString());
+//		}
+
+
+	}
 
 	private void loadLocationQuiz() {
 
@@ -62,20 +96,20 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 		Location location3 = new Location("well");
 
 		Quiz quiz1 = new Quiz("Quiz1");
-		Quiz quiz2 = new Quiz("Quiz2");
-		Quiz quiz3 = new Quiz("Quiz3");
+//		Quiz quiz2 = new Quiz("Quiz2");
+//		Quiz quiz3 = new Quiz("Quiz3");
 
 		/*subjectRepository.save(math);
 		subjectRepository.save(computer);*/
 
 		Set<Quiz> quizzes = new HashSet<Quiz>();
 		quizzes.add(quiz1);
-		quizzes.add(quiz2);
+//		quizzes.add(quiz2);
 
 		Set<Quiz> quizzesDoug = new HashSet<Quiz>();
 		quizzesDoug.add(quiz1);
-		quizzesDoug.add(quiz2);
-		quizzesDoug.add(quiz3);
+//		quizzesDoug.add(quiz2);
+//		quizzesDoug.add(quiz3);
 
 		location1.setQuizzes(quizzes);
 		location2.setQuizzes(quizzes);
@@ -93,18 +127,18 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 		locations.add(location3);
 
 		quiz1.setLocations(locations);
-		quiz2.setLocations(locations);
-		quiz3.setLocations(locations);
+//		quiz2.setLocations(locations);
+//		quiz3.setLocations(locations);
 
 		quiz1.setScore(test1);
-		quiz2.setScore(test1);
-		quiz2.setScore(test1);
+//		quiz2.setScore(test1);
+//		quiz2.setScore(test1);
 
 		test1.setQuizzes(quizzes);
 		scoreRepository.save(test1);
 
 		quizRepository.save(quiz1);
-		quizRepository.save(quiz2);
+//		quizRepository.save(quiz2);
 
 
 
@@ -149,8 +183,8 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 	@Override
 	@Transactional
 	public void run(String... strings) throws Exception {
-
-		loadLocationQuiz();
+//		loadPlaceTests();
+//		loadLocationQuiz();
 
 //		LocationOld locationOld = new LocationOld();
 //		locationOld.setName("mailbox");
