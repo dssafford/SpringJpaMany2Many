@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.transaction.Transactional;
+import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -41,6 +42,9 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 	@Autowired
 	PlaceTestRepository placeTestRepository;
 
+	@Autowired
+	TestRepository testRepository;
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJpaMany2ManyApplication.class, args);
 	}
@@ -54,7 +58,41 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 	private ScoreRepository scoreRepository;
 
 	private void loadPlaceTests(){
-				// save a couple of categories
+
+		Test test = new Test("Location", new BigDecimal(89.0), "comments here");
+
+		Place place = new Place(1, "mailbox");
+		Place place1 = new Place(2, "driveway");
+		Place place2 = new Place(3 , "garage");
+		Place place3 = new Place(4, "sidewalk");
+		Place place4 = new Place(5, "well");
+
+		PlaceTest placeTest = new PlaceTest(1,1, "mailbox", "driveway", false, 1);
+		PlaceTest placeTest1 = new PlaceTest(2,5, "well", "well", true, 1);
+		PlaceTest placeTest2 = new PlaceTest(3,2, "driveway", "driveway", true, 1);
+		PlaceTest placeTest3 = new PlaceTest(4,10, "door", "camera", false,1);
+		PlaceTest placeTest4 = new PlaceTest(5,6, "porch", "porch", true,1);
+		PlaceTest placeTest5 = new PlaceTest(6,9, "storm door", "porch", false,1);
+		PlaceTest placeTest6 = new PlaceTest(7,8, "camera", "camera", true,1);
+
+		placeRepository.save(place);
+		placeRepository.save(place1);
+		placeRepository.save(place2);
+		placeRepository.save(place3);
+		placeRepository.save(place4);
+
+		placeTestRepository.save(placeTest);
+		placeTestRepository.save(placeTest1);
+		placeTestRepository.save(placeTest2);
+		placeTestRepository.save(placeTest3);
+		placeTestRepository.save(placeTest4);
+		placeTestRepository.save(placeTest5);
+		placeTestRepository.save(placeTest6);
+
+		testRepository.save(test);
+
+
+						// save a couple of categories
 //		Place categoryA = new Place(1, "placename");
 //		Set placeTest = new HashSet<PlaceTest>(){{
 //			add(new PlaceTest("mailbox", categoryA));
@@ -183,7 +221,7 @@ public class SpringJpaMany2ManyApplication implements CommandLineRunner{
 	@Override
 	@Transactional
 	public void run(String... strings) throws Exception {
-//		loadPlaceTests();
+		loadPlaceTests();
 //		loadLocationQuiz();
 
 //		LocationOld locationOld = new LocationOld();

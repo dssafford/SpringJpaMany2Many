@@ -12,8 +12,8 @@ public class Place {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
-	@OneToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-	private PlaceTest placeTest;
+//	@OneToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+//	private PlaceTest placeTest;
 
 	private Integer placeNumber;
 	private String placeName;
@@ -26,11 +26,11 @@ public class Place {
 		this.id = id;
 	}
 
-	public Place(PlaceTest placeTest, Integer placeNumber, String placeName) {
-		this.placeTest = placeTest;
-		this.placeNumber = placeNumber;
-		this.placeName = placeName;
-	}
+//	public Place(PlaceTest placeTest, Integer placeNumber, String placeName) {
+////		this.placeTest = placeTest;
+//		this.placeNumber = placeNumber;
+//		this.placeName = placeName;
+//	}
 
 	public Integer getPlaceNumber() {
 		return placeNumber;

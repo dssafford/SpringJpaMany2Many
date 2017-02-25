@@ -16,15 +16,23 @@ public class PlaceTest {
 //	@JoinColumn(name = "place_id")
 //	private Place place;
 
-	@OneToOne
-	private Place place;
+//	@OneToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+//	private Place place;
 
+	private Integer placeId;
 	private Integer placeNumber;
 	private String placeName;
 	private String answerPlaceName;
 	private Boolean answerIsCorrect;
+	private Integer testId;
 
+	public Integer getPlaceId() {
+		return placeId;
+	}
 
+	public void setPlaceId(Integer placeId) {
+		this.placeId = placeId;
+	}
 
 	public Integer getId() {
 		return id;
@@ -32,14 +40,6 @@ public class PlaceTest {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public Place getPlace() {
-		return place;
-	}
-
-	public void setPlace(Place place) {
-		this.place = place;
 	}
 
 	public Integer getPlaceNumber() {
@@ -74,18 +74,29 @@ public class PlaceTest {
 		this.answerIsCorrect = answerIsCorrect;
 	}
 
+	public Integer getTestNumber() {
+		return testId;
+	}
+
+	public void setTestNumber(Integer testId) {
+		this.testId = testId;
+	}
+
 	public PlaceTest(){}
-	public PlaceTest(Integer placeNumber, String placeName, String answerPlaceName,
-						  Boolean answerIsCorrect){
+
+	public PlaceTest(Integer placeId, Integer placeNumber, String placeName, String answerPlaceName,
+						  Boolean answerIsCorrect, Integer testId){
 		this.placeNumber=placeNumber;
 		this.placeName=placeName;
 		this.answerPlaceName=answerPlaceName;
 		this.answerIsCorrect=answerIsCorrect;
+		this.testId=testId;
 	}
-	public PlaceTest(String placeName, Place place){
-		this.placeName = placeName;
-		this.place=place;
+	public PlaceTest(Integer placeNumber, String placeName){
+		this.placeNumber=placeNumber;
+		this.placeName=placeName;
 	}
+
 
 
 }
