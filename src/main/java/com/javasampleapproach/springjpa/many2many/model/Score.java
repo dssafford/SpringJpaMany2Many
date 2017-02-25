@@ -26,6 +26,10 @@ public class Score {
 	@OneToMany(mappedBy = "score", cascade = CascadeType.ALL)
 	private Set<Quiz> quizzes;
 
+	public Score(){}
+	public Score(String comments){
+		this.comments = comments;
+	}
 
 	public Integer getId() {
 		return id;

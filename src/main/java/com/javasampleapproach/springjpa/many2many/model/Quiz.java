@@ -67,6 +67,11 @@ public class Quiz {
 	public Quiz() {
 	}
 
+	public Quiz(Score myscore, String comments){
+		this.score = myscore;
+		this.comments= comments;
+	}
+
 	public Quiz(String comments) {
 		this.comments = comments;
 	}
