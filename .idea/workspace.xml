@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6215ebf8-0825-4ff5-9bb3-4e457c59cc7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/TestRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/Place.java" afterPath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/Place.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/PlaceTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/PlaceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceTestRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceTestRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/TestRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/TestRepository.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,19 +19,19 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5058333">
+    <splitter split-orientation="horizontal" split-proportion="0.63166666">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="SpringJpaMany2ManyApplication.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+                <state relative-caret-position="227">
+                  <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#loadLocationQuiz#0;class#SpringJpaMany2ManyApplication#0" expanded="false" />
-                    <element signature="e#4111#4117#0" expanded="true" />
-                    <element signature="e#4205#4211#0" expanded="true" />
+                    <element signature="e#5203#5209#0" expanded="true" />
+                    <element signature="e#5297#5303#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -44,7 +41,19 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/TestRepository.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="150">
-                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PlaceTestRepository.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceTestRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="379">
+                  <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -143,8 +152,8 @@
           <file leaf-file-name="PlaceTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/PlaceTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+                <state relative-caret-position="566">
+                  <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
                   <folding>
                     <element signature="e#605#606#0" expanded="true" />
                     <element signature="e#626#627#0" expanded="true" />
@@ -286,11 +295,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/Score.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/LocationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceTestRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/Place.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/PlaceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/TestRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceTestRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java" />
       </list>
     </option>
@@ -1089,7 +1098,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83757000" />
+    <option name="totallyTimeSpent" value="88512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1187,7 +1196,7 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java</url>
-          <line>383</line>
+          <line>415</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -1195,45 +1204,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java</url>
-          <line>445</line>
+          <line>477</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java</url>
-          <line>224</line>
+          <line>256</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java</url>
-          <line>344</line>
+          <line>376</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java</url>
-          <line>166</line>
+          <line>198</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java</url>
-          <line>95</line>
+          <line>65</line>
           <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="21" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1259,8 +1262,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#loadLocationQuiz#0;class#SpringJpaMany2ManyApplication#0" expanded="false" />
-            <element signature="e#4111#4117#0" expanded="true" />
-            <element signature="e#4205#4211#0" expanded="true" />
+            <element signature="e#5203#5209#0" expanded="true" />
+            <element signature="e#5297#5303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1329,8 +1332,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#loadLocationQuiz#0;class#SpringJpaMany2ManyApplication#0" expanded="false" />
-            <element signature="e#4111#4117#0" expanded="true" />
-            <element signature="e#4205#4211#0" expanded="true" />
+            <element signature="e#5203#5209#0" expanded="true" />
+            <element signature="e#5297#5303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1533,22 +1536,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceTestRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1570,43 +1563,6 @@
             <element signature="e#874#875#0" expanded="true" />
             <element signature="e#921#922#0" expanded="true" />
             <element signature="e#954#955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/PlaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
-          <folding>
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1640,22 +1596,69 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/TestRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/repository/PlaceTestRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/model/PlaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+          <folding>
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javasampleapproach/springjpa/many2many/SpringJpaMany2ManyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="227">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#loadLocationQuiz#0;class#SpringJpaMany2ManyApplication#0" expanded="false" />
-            <element signature="e#4111#4117#0" expanded="true" />
-            <element signature="e#4205#4211#0" expanded="true" />
+            <element signature="e#5203#5209#0" expanded="true" />
+            <element signature="e#5297#5303#0" expanded="true" />
           </folding>
         </state>
       </provider>
